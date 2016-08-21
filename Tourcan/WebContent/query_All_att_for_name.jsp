@@ -7,7 +7,7 @@
 
 <%
 String str = request.getParameter("att_name");
-    AttService asv =new AttService();
+	AttService asv =new AttService();
     List<AttVO> list = asv.getAllByName(str);
     pageContext.setAttribute("list",list);
 %>

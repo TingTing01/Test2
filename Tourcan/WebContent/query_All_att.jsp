@@ -6,7 +6,7 @@
 <%-- 此頁練習採用 EL 的寫法取值 --%>
 
 <%
-    AttService asv =new AttService();
+	AttService asv =new AttService();
     List<AttVO> list = asv.getAll();
     pageContext.setAttribute("list",list);
 %>
