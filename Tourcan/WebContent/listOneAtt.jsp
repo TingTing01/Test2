@@ -47,7 +47,8 @@
 			<td><%=attVO.getAtt_url()%></td>
 			<td><%=attVO.getAtt_price()%></td>
 			<td><%=attVO.getAtt_staytime()%></td>
-			<td><%=attVO.getRegion_id()%></td>
+			<td>${attVO.regionVO.region_id }</td>
+			
 			<td></td>
 		</tr>
 	</table>
@@ -58,7 +59,7 @@
 	<h3>intro:${attVO.att_intro }</h3>
 	<h3>open:${attVO.att_open }</h3>
 	<h3>phone:${attVO.att_phone }</h3>
-
+	<h3>Region:${attVO.regionVO.region_id }</h3>
 
 
 
