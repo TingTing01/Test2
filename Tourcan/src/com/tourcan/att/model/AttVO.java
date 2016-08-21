@@ -1,12 +1,14 @@
 package com.tourcan.att.model;
 
+import com.tourcan.region.model.RegionVO;
+
 public class AttVO implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 //	private Integer att_area;
-	private String att_name;
 	private Integer att_id;
+	private String att_name;
 	private Integer att_staytime;
 	private Integer region_id;
 	private String att_addr;
@@ -18,7 +20,7 @@ public class AttVO implements java.io.Serializable {
 	private String att_open;
 	private Double att_lat;
 	private Double att_lng;
-
+//	private RegionVO regionVO;
 //	public Integer getAtt_area() {
 //		return att_area;
 //	}
@@ -26,6 +28,24 @@ public class AttVO implements java.io.Serializable {
 //	public void setAtt_area(Integer att_area) {
 //		this.att_area = att_area;
 //	}
+
+	
+	
+//	public RegionVO getRegionVO() {
+//		return regionVO;
+//	}
+//
+//	public void setRegionVO(RegionVO regionVO) {
+//		this.regionVO = regionVO;
+//	}
+	
+
+	public Integer getAtt_id() {
+		return att_id;
+	}
+	public void setAtt_id(Integer att_id) {
+		this.att_id = att_id;
+	}
 
 	public String getAtt_name() {
 		return att_name;
@@ -35,13 +55,6 @@ public class AttVO implements java.io.Serializable {
 		this.att_name = att_name;
 	}
 
-	public Integer getAtt_id() {
-		return att_id;
-	}
-
-	public void setAtt_id(Integer att_id) {
-		this.att_id = att_id;
-	}
 
 	public Integer getAtt_staytime() {
 		return att_staytime;
