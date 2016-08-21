@@ -55,6 +55,7 @@ function toDelete() {
 		<th>url</th>
 		<th>price</th>
 		<th>staytime</th>
+		<th>region_id</th>
 	</tr>
 	
 	<c:forEach var="attVO" items="${list}">
@@ -68,7 +69,7 @@ function toDelete() {
 		<td>${attVO.att_url }</td>
 		<td>${attVO.att_price }</td>
 		<td>${attVO.att_staytime }</td>
-		
+		<td>${attVO.region_id }</td>
 	
 		
 <!-- 			<td> -->

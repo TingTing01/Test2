@@ -35,6 +35,8 @@
 			<th>url</th>
 			<th>price</th>
 			<th>staytime</th>
+			<th>region_id</th>
+			
 		</tr>
 		<tr align='center' valign='middle'>
 			<td><%=attVO.getAtt_id()%></td>
@@ -46,7 +48,7 @@
 			<td><%=attVO.getAtt_url()%></td>
 			<td><%=attVO.getAtt_price()%></td>
 			<td><%=attVO.getAtt_staytime()%></td>
-
+			<td><%=attVO.getRegion_id()%></td>
 			<td></td>
 		</tr>
 	</table>

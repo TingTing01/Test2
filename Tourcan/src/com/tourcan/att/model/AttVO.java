@@ -20,7 +20,7 @@ public class AttVO implements java.io.Serializable {
 	private String att_open;
 	private Double att_lat;
 	private Double att_lng;
-//	private RegionVO regionVO;
+	private RegionVO regionVO;
 //	public Integer getAtt_area() {
 //		return att_area;
 //	}
@@ -31,13 +31,13 @@ public class AttVO implements java.io.Serializable {
 
 	
 	
-//	public RegionVO getRegionVO() {
-//		return regionVO;
-//	}
-//
-//	public void setRegionVO(RegionVO regionVO) {
-//		this.regionVO = regionVO;
-//	}
+	public RegionVO getRegionVO() {
+		return regionVO;
+	}
+
+	public void setRegionVO(RegionVO regionVO) {
+		this.regionVO = regionVO;
+	}
 	
 
 	public Integer getAtt_id() {
