@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.tourcan.att.model.AttService;
 import com.tourcan.att.model.AttVO;
 
-@WebServlet("/AttServlet")
+@WebServlet("/att/AttServlet")
 public class AttServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -210,7 +210,7 @@ public class AttServlet extends HttpServlet {
 		// Send the use back to the form, if there were errors
 				if (!errorMsgs1.isEmpty()) {
 					RequestDispatcher failureView = request
-							.getRequestDispatcher("/query_One_Att.jsp");
+							.getRequestDispatcher("/att/query_One_Att.jsp");
 					failureView.forward(request, response);
 					return;//程式中斷
 				}
@@ -246,7 +246,7 @@ public class AttServlet extends HttpServlet {
 				
 		//***************************3.查詢完成,準備轉交(Send the Success view)*************//*
 				request.setAttribute("attVO", attVO); // 資料庫取出的empVO物件,存入req
-				String url = "/listOneAtt.jsp";
+				String url = "/result/listOneAtt.jsp";
 				RequestDispatcher successView = request.getRequestDispatcher(url); // 成功轉交 listOneEmp.jsp
 				successView.forward(request, response);
 
@@ -254,7 +254,7 @@ public class AttServlet extends HttpServlet {
 			} catch (Exception e) {
 				errorMsgs1.add("無法取得資料:" + e.getMessage());
 				RequestDispatcher failureView = request
-						.getRequestDispatcher("/query_One_Att.jsp");
+						.getRequestDispatcher("/att/query_One_Att.jsp");
 				failureView.forward(request, response);
 			}
 		}
@@ -277,7 +277,7 @@ public class AttServlet extends HttpServlet {
 		// Send the use back to the form, if there were errors
 				if (!errorMsgs1.isEmpty()) {
 					RequestDispatcher failureView = request
-							.getRequestDispatcher("/query_One_Att.jsp");
+							.getRequestDispatcher("/att/query_One_Att.jsp");
 					failureView.forward(request, response);
 					return;//程式中斷
 				}
@@ -314,7 +314,7 @@ public class AttServlet extends HttpServlet {
 				
 		//***************************3.查詢完成,準備轉交(Send the Success view)*************//*
 				request.setAttribute("avo", avo); // 資料庫取出的empVO物件,存入req
-				String url = "/listOneAtt2.jsp";
+				String url = "/result/listOneAtt2.jsp";
 				RequestDispatcher successView = request.getRequestDispatcher(url); // 成功轉交 listOneEmp.jsp
 				successView.forward(request, response);
 
@@ -322,7 +322,7 @@ public class AttServlet extends HttpServlet {
 			} catch (Exception e) {
 				errorMsgs1.add("無法取得資料:" + e.getMessage());
 				RequestDispatcher failureView = request
-						.getRequestDispatcher("/query_One_Att.jsp");
+						.getRequestDispatcher("/att/query_One_Att.jsp");
 				failureView.forward(request, response);
 			}
 		}
